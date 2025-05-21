@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    border: 1px solid black;
+    background-image: url(./Images/font.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 110% 100%;
+    position: relative;
+
+    .forButtons {
+        width: 40%;
+        height: 8%;
+        // border: 1px solid white;
+        position: absolute;
+        top: 88%;
+        left: 30%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        #openCards,
+        #stopCards,
+        #deleteCards {
+            width: 30%;
+            height: 100%;
+            background-color: rgba(252, 50, 50, 0);
+            color: rgb(243, 175, 151);
+            font-size: 24px;
+            cursor: pointer;
+            border: none;
+        }
+    }
+
+    .table {
+        position: absolute;
+        top: 4%;
+        left: 16%;
+        width: 70%;
+        height: 80%;
+        // border: 1px solid  white;
+        border-radius: 200px;
+        background-image: url(./Images/Table.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 102% 110%;
+        display: flex;
+        position: relative;
+
+        .forDiller {
+            position: absolute;
+            top: 5%;
+            left: 16%;
+            width: 70%;
+            height: 34%;
+            // border: 1px solid white;
+            display: flex;
+            // flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .number {
+                width: 20%;
+                height: 100%;
+                // border: 1px solid white;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+
+                span {
+                    display: block;
+                    text-align: center;
+                    font-size: 40px;
+                    color: white;
+                }
+
+                h1 {
+                    font-size: 40px;
+                    color: red;
+                }
+            }
+
+            .cardsDiv {
+                width: 100%;
+                height: 100%;
+                // border: 1px solid white;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                
+                img{
+                    width: 20%;
+                    height: 100%;
+                    // border: 1px solid white;
+                    background-repeat: no-repeat;
+                    background-position: 100% 100%;
+                    background-size: 100% 100%;
+                }
+            }
+        }
+        // .forWinner{
+        //     position: absolute;
+        //     top: 46%;
+        //     left: 32%;
+        //     width: 40%;
+        //     height: 14%;
+        //     border: 1px solid white;
+        //     p{
+        //         font-size: 40px;
+        //         color: aqua;
+        //         font-weight: 600;
+        //     }
+        // }
+        .forMe {
+            width: 70%;
+            height: 34%;
+            // border: 1px solid white;
+            position: absolute;
+            top: 66%;
+            left: 16%;
+            display: flex;
+
+            .myNumber {
+                width: 20%;
+                height: 100%;
+                // border: 1px solid white;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+
+                span {
+                    display: block;
+                    text-align: center;
+                    font-size: 40px;
+                    color: white;
+                }
+
+                h1 {
+                    font-size: 40px;
+                    color: red;
+                }
+            }
+
+            .myCards {
+                width: 100%;
+                height: 100%;
+                // border: 1px solid white;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                img{
+                    width: 20%;
+                    height: 100%;
+                    // border: 1px solid white;
+                    background-repeat: no-repeat;
+                    background-position: 100% 100%;
+                    background-size: 100% 100%;
+                }
+            }
+        }
+    }
+}
